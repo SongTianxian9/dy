@@ -1,0 +1,2159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><h1 class="atx" id="传染病">传染病</h1>
+<h2 class="atx" id="名词解释">名词解释</h2>
+<ol>
+<li><strong>兽医传染病学：</strong> 研究家畜、家禽传染病发生和流行的规律以及预防和消灭这些传染病方法的科学。</li>
+<li><strong>传染病：</strong> 由病原微生物引起，具有一定的潜伏期和临诊表现，并具有传染性的疾病，称为传染病。</li>
+<li><strong>感染：</strong> 病原微生物侵入动物机体，并在一定的部位定居、生长繁殖，从而引起机体一系列的病理反应的过程。</li>
+<li><strong>感染梯度：</strong> 动物被病原体感染后会有不同的临诊表现，从无任何症状到明显症状甚至死亡，这种不同的表现被称为感染梯度。</li>
+<li><strong>传染性：</strong> 从被感染动物体内排出的病原体侵入另一易感动物体内，能引起同样症状的疾病，这种特性叫做传染性。</li>
+<li><strong>传染源：</strong> 是指病原体在其中寄居、生长、繁殖，并能排出体外的动物机体，具体说传染源就是受感染的动物。</li>
+<li><strong>传播途径：</strong> 病原体由传染源排出后，经一定的方式再侵入其他易感动物所经的途径称为传播途径。</li>
+<li><strong>易感性：</strong> 易感性是抵抗力的反面，指动物机体对某一病原微生物感染性的大小。</li>
+<li><strong>水平传播：</strong> 传染病在群体之间或个体之间以水平形式横向平行传播。包括直接接触传播和间接接触传播。</li>
+<li><strong>垂直传播：</strong> 从母体到其后代两代之间的传播。包括经胎盘传播、经卵传播和经产道传播。</li>
+<li><strong>顿挫型感染：</strong> 开始症状较重，与急性病例相似，但特征性症状尚未出现即迅速消退恢复健康者。</li>
+<li><strong>内源性感染：</strong> 体内条件性病原微生物引起的感染。</li>
+<li><strong>持续性感染：</strong> 指动物长期的持续的感染状态。</li>
+<li><strong>地方流行性：</strong> 在一定的地区和畜群中，带有局限性传播特征，且是较小规模流行的传染病，称为地方流行性，或说疾病的发生有一定的地区性。</li>
+<li><strong>流行性：</strong> 是指在一定时间内一定畜群出现比寻常为多的病例，没有一个病例的绝对数的界限，仅仅是指疾病出现频率较高的一个相对名词。</li>
+<li><strong>潜伏期：</strong> 由病原微生物侵入动物体并进入繁殖时起，直到疾病的临诊症状（最初）出现为止。</li>
+<li><strong>前驱期：</strong> 从出现疾病的最初症状开始到特征性症状出现为止，这段时间叫前驱期，是疾病的征兆阶段。</li>
+<li><strong>疫源地：</strong> 有传染源及其排出的病原体存在的地区称为疫源地，疫源地具有向外传播病原的条件，因此可能威胁其他地区的安全。</li>
+<li><strong>疫病预防：</strong> 采取各种措施将疫病排除于一个未受感染的畜群之外，包括隔离、检疫、免疫预防、药物预防、加强饲养管理等措施。</li>
+<li><strong>疫病防制：</strong> 采取各种措施，减少或消除疫病的病原，以降低已出现于畜群中疫病的发病数和死亡数，并把疫病限制在局部范围内。</li>
+<li><strong>疫病消灭：</strong> 意味着一定种类病原体的消灭。</li>
+<li><strong>检疫：</strong> 应用各种诊断方法，对畜禽及其畜产品进行疫病检查，并采取相应的措施，防止疫病的发生和传播。</li>
+<li><strong>隔离：</strong> 根据诊断检疫的结果，将病蓄、可以感染家畜和假定健康家畜分割开，防止传染病的继续传播。</li>
+<li><strong>封锁：</strong> 切断或限制疫区与周围地区的一切自由的日常交通、交流或往来，防止疫情扩散以及安全区健康动物的误入而对疫区或其他动物群采取划区隔离、扑杀、销毁、消毒和紧急免疫接种等的强制性措施。</li>
+<li><strong>消毒：</strong> 采用物理、化学或生物的方法，杀灭外界环境中的微生物。</li>
+<li><strong>预防接种：</strong> 在经常发生某些传染病的地区，或有某些传染病潜在的地区，或受到邻近地区某些传染病经常威胁的地区，为了防患于未然，在平时有计划的给健康畜群进行的免疫接种。</li>
+<li><strong>免疫接种：</strong> 将抗原物质（如疫苗、菌苗、类毒素等）接种到动物体内，激发动物机体产生特异性免疫反应，使易感动物转化为非易感动物的手段。包括预防接种和紧急接种。</li>
+<li><strong>紧急接种：</strong> 发生传染病时，为迅速控制和扑灭疫病的流行，对疫区和受威胁区尚未发病的动物进行的免疫接种。</li>
+<li><strong>免疫程序：</strong> 根据一定地区、养殖场或特定动物群体内传染病的流行状况、动物健康状况和不同疫苗特性，为特定动物群制定的接种计划，包括接种疫苗的类型、方法、顺序、次数、时间、时间间隔等规程和次序。（免疫程序是指根据当地疾情、动物机体状况以及现有疫苗的性能，选用适当的疫苗，安排在适当的时间给动物进行免疫接种，使动物机体获得稳定的免疫力。）</li>
+<li><strong>珍珠病：</strong> 牛结核时，胸腔浆膜上出现半透明或不透明灰白色硬的结核结节，有的单个存在，有的成堆，像珍珠一样挂在胸壁上，称为珍珠病。</li>
+<li><strong>虎斑心：</strong> 口蹄疫时的心脏病变，心包膜上有弥散性及点状出血点，心肌松软，心脏表面有灰白色或淡黄色斑点和条纹，故称“虎斑心”。</li>
+<li><strong>恐水症：</strong> 动物患狂犬病后，常有害怕喝水的突出临床表现，甚至看到液体时就发生咽喉痉挛，故又称为“恐水症”。</li>
+<li><strong>内基小体：</strong> 狂犬病病毒在动物体内主要存在于中枢神经组织，唾液腺和唾液内，在唾液腺和中枢神经（尤其是脑海马角、大脑皮层、小脑等）细胞的胞浆内形成狂犬病特异的包涵体，叫内基小体。</li>
+<li><strong>虾肉样变：</strong> 猪肺炎支原体感梁猪后,在感染猪肺脏上引起的典型的病理变化，通常出现在肺的尖叶或心叶上,病变部位先是出现肉变,然后肉色褪去，发白呈现胰脏的颜色或虾肉样的颜色，称为胰变成虾肉样变（猪支原体肺炎引起猪支气管肺炎后，两肺尖吐、心叶、中间叶及膈叶前下部形成左右对称的淡红色或灰红色、半透明状、界限明显、似鲜嫩肌肉样病变。随病程延长或病情加重，病变部位颜色转为灰白色或浅红色，俗称“胰变”或“虾肉样变“。）</li>
+<li><strong>钻石皮肤病：</strong> 动物感染猪丹毒后，有时出现全身大部皮肤发生菱形的或方形的，形似钻石，稍突出于皮肤表面的疹块的临床症状，故称之为“钻石皮肤病”。</li>
+<li><strong>双相热：</strong> 动物患犬瘟热后，体温升高持续2d左右，而后下降到常温，2～3d后再次发热，持续数周之久。</li>
+<li><strong>大肝病：</strong> 家禽患禽白血病时，由于肝实质中弥散性均匀分布粟粒状肿瘤，使得肝脏显著肿大，可占据整个腹部，俗称“大肝病”。</li>
+</ol>
+<h2 class="atx" id="绪论">绪论</h2>
+<h3 class="atx" id="1、近20年防控成就和意义">1、近20年防控成就和意义</h3>
+<h4 class="atx" id="成就：">成就：</h4>
+<ol>
+<li><p>马牛羊传染病</p>
+<ul>
+<li>消灭牛瘟(1956) 、牛肺疫(1996) 和控制马传贫</li>
+<li>对布病、牛流行热、羊痘、牛病毒性腹泻-黏膜病、牛白血病和蓝舌病等控制较好</li>
+</ul>
+</li>
+<li><p>猪传染病</p>
+<ul>
+<li>猪瘟:研制成功猪瘟兔化弱毒疫苗、猪三联苗和二联苗</li>
+<li>猪呼吸系统疾病，繁殖障碍性疫病和腹泻性疫病均有研究和应用</li>
+</ul>
+</li>
+<li><p>家禽传染病</p>
+<p>新城疫、马立克、传染性法氏囊、传支、传喉、小鹅瘟、禽流感等进行了系统的研究</p>
+</li>
+<li><p>小动物传染病</p>
+<ul>
+<li>1984年由我国首先发现兔病毒性出血症</li>
+<li>对狂犬病的防制做了大量的工作，已基本控制其传播</li>
+</ul>
+</li>
+<li><p>完善了动物传染病法规</p>
+</li>
+<li><p>建立了生物安全体系</p>
+</li>
+</ol>
+<h4 class="atx" id="动物传染病防控的意义">动物传染病防控的意义:</h4>
+<p>动物传染病的控制和消灭程度，是衡量一个国家<u>鲁医事业发展水平</u>的重要标志，也代表一个<u>国家文明的程度</u>和<u>经济发展实力</u>。</p>
+<h3 class="atx" id="2、传染病发展的3环节，以及针对各环节的预防消灭措施（前提：分清类级）">2、传染病发展的3环节，以及针对各环节的预防消灭措施（前提：分清类级）</h3>
+<p>传染源、传播途径、易感动物</p>
+<h3 class="atx" id="3、一类疫病：">3、一类疫病：</h3>
+<p>口蹄疫、猪水疱病、猪瘟、非洲猪瘟、高致病性猪蓝耳病、非洲马瘟、牛瘟、传染性胸膜肺炎、牛海绵状脑病、痒病、蓝舌病、小反刍兽疫、绵羊痘和山羊痘、高致病性禽流感、新城疫、鲤春病毒血症、白斑综合症</p>
+<p>二类疫病中炭疽发生需要上报疫情，其余不必须。</p>
+<h3 class="atx" id="4、深入了解流行环节有何意义">4、深入了解流行环节有何意义</h3>
+<p>传染源、传播途径及易感动物，这三个条件常统称为传染病流行过程的三个基本环节或三要素，当这三个条件同时存在并相互联系时就会引起传染病的发生或流行。因此，掌握传染病流行过程的基本环节及其影响因素，有助于制订正确的防疫措施，控制传染病的蔓延或流行。</p>
+<h3 class="atx" id="5、传染病特性">5、传染病特性</h3>
+<ol>
+<li>每种传染病都有其特异的病原微生物存在</li>
+<li>具有传染性和流行性</li>
+<li>被感染的机体发生特异性反应</li>
+<li>耐过动物能获得特异性免疫</li>
+<li>具有特征性的临诊表现</li>
+<li>具有明显的流行规律（季节性、周期性）</li>
+</ol>
+<h3 class="atx" id="6、传染病发展的4-个阶段，划分依据以及各阶段对病原感染的意义">6、传染病发展的4 个阶段，划分依据以及各阶段对病原感染的意义</h3>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="left">划分依据</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">潜伏期</td>
+<td align="left">由病原微生物侵入动物体并进行繁殖时起，直到疾病的临诊症状(最初)出现为止</td>
+<td>(1)进一步认识疾病，为诊断做参考;<br>(2)是进行隔离检疫，封锁期限的主要依据。</td>
+</tr>
+<tr>
+<td align="center">前驱期</td>
+<td align="left">从出现疾病的最初症状开始到特征性症状出现为止，这段时间叫前驱期，是疾病的征兆阶段</td>
+<td>出现一般症状，特征性症状不明显</td>
+</tr>
+<tr>
+<td align="center">明显期</td>
+<td align="left">在前驱期之后，表现特征性症状的阶段，是该病发展的高峰阶段</td>
+<td>出现许多具有代表性的特征症状，具有诊断价值</td>
+</tr>
+<tr>
+<td align="center">转归期</td>
+<td align="left">传染病发展的最后时期</td>
+<td>康复期动物在一定时间内还会带菌 (毒)、排毒，可能成为传染源，因而要倍加注意</td>
+</tr>
+</tbody></table>
+<h3 class="atx" id="7、疫点疫区划分依据">7、疫点疫区划分依据</h3>
+<p><strong>疫点：</strong> 范围小的疫源地或单个传染源所构成的疫源地。</p>
+<p><strong>疫区：</strong> 若干个疫源地连成片并范围较大时称为疫区。疫区一般是指在某种传染病正在流行的地区，范围除病畜所在的畜牧场、自然村外，还包括病畜于发病前后放牧、饮水、使役及活动过的地区。</p>
+<p>实际工作中，有时也将某个比较孤立的畜牧场或自然村称为疫点，所以疫点与疫区的划分不是孤立的。</p>
+<h3 class="atx" id="8、执行封锁和解除封锁的基本原则">8、执行封锁和解除封锁的基本原则</h3>
+<h4 class="atx" id="执行封锁：">执行封锁：</h4>
+<p>“早、快、严、小”，指流行早期封锁，行动果断迅速，封锁严密，范围不宜过大。</p>
+<h4 class="atx" id="解除封锁：">解除封锁：</h4>
+<p>疫区内(包括疫点)最后一头病畜禽被扑杀或痊愈后，经过该病的一个最长潜伏期以上的检测、观察，未再出现病畜禽时，经彻底消毒清扫，由县级以上的兽医部门检查合格后，经原发布封锁令的政府部门发布解除封锁令，并通报毗邻地区和有关部门。</p>
+<h3 class="atx" id="9、常用消毒方法">9、常用消毒方法</h3>
+<ol>
+<li>机械性消除</li>
+<li>物理消毒法:阳光、紫外线和干燥;火焰灼烧，煮沸消毒，蒸汽消毒</li>
+<li>化学消毒法: 化学药品20多种。 一般的有新洁尔灭、漂白粉、环氧乙烷来苏儿等、生石灰，常用的有爱迪伏、百毒杀。酒精的常用消毒浓度70%。</li>
+<li>生物热消毒法:主要用于污染的粪便的无害化处理，但不能杀死芽胞，需要烧毁。</li>
+</ol>
+<h3 class="atx" id="10、常用消毒剂应用范围">10、常用消毒剂应用范围</h3>
+<p>1％ ~ 2％氢氧化钠水溶液、3% ~ 5%来苏尔溶液：圈舍地面用具</p>
+<p>石灰乳：消毒地面、圈舍、沟渠</p>
+<p>福尔马林：圈舍熏蒸消毒</p>
+<p>75%酒精：皮肤消毒剂</p>
+<p>0.1%新洁尔灭：器械衣物等</p>
+<p>环氧乙烷：器械熏蒸消毒</p>
+<p>氯胺：饮水消毒</p>
+<p>漂白粉（次氯酸钙）：地面、圈舍（对衣物和金属有损伤作用</p>
+<h3 class="atx" id="11、免疫接种后有哪些动物反应，如何应对">11、免疫接种后有哪些动物反应，如何应对</h3>
+<ol>
+<li>正常反应：是指由于制品本身的特性而引起的反应。随着科学发展进一步改进疫苗质量和接种方法，此类反应是可以逐步克服的。</li>
+<li>严重反应：此类反应和正常反应在本质上没有区别，但程度较重或发生反应的动物数超过正常比例。这类反应通过严格控制产品质量和遵照使用说明书，可以减少到最低限度。</li>
+<li>并发症：是指与正常反应性质不同的反应，主要包括超敏反应、扩散感染和诱发潜伏感染。可通过加抗生素，保护剂等措施减少应激，也可在免疫接种前或免疫接种时，给被接种动物使用抗应激药物，抗生素等，另外严格遵守操作程序，注意气候条件，控制好圈舍环境条件，选择适当的免疫时机等，也能有效避免或降低免疫接种诱发的不良反应。</li>
+</ol>
+<h3 class="atx" id="12、2021年，国家强制免疫的传染病">12、2021年，国家强制免疫的传染病</h3>
+<p>（无猪瘟，高致病性蓝耳病；有小反刍兽疫、布病…）</p>
+<p>强制免疫的5种动物疫病：高致病性禽流感、口蹄疫、小反刍兽疫、布鲁氏菌病、包虫病</p>
+<h2 class="atx" id="人兽共患病">人兽共患病</h2>
+<h3 class="atx" id="1、大肠杆菌">1、大肠杆菌</h3>
+<h4 class="atx" id="仔猪大肠杆菌病分哪几种，各自年龄段">仔猪大肠杆菌病分哪几种，各自年龄段</h4>
+<ol>
+<li>黄痢：多发于出生后1周龄以内的猪，以1~3日龄为发病高峰。</li>
+<li>白痢：主要侵害10～30日龄以内的猪，以10~20日龄为发病高峰。</li>
+<li>水肿病：常发生于生长较快的健壮猪；断奶仔猪多发。</li>
+<li>断乳仔猪腹泻：常发生于断奶后5～14d的仔猪，死亡高峰在断奶后的6～10d。</li>
+</ol>
+<h4 class="atx" id="鸡大肠杆菌病常见哪几种？各自临床症状、病理变化">鸡大肠杆菌病常见哪几种？各自临床症状、病理变化</h4>
+<ol>
+<li><p>急性败血型</p>
+<ol>
+<li>病鸡不出现症状突然死亡；或者症状不明显</li>
+<li>部分病鸡离群呆立，或挤堆，羽毛松乱，食欲减退或废绝</li>
+<li>排黄白色稀粪，肛门周围羽毛污染</li>
+<li><strong>纤维素性心包炎是本病的特征性病变</strong> ，表现为心包积液，心包膜混浊、增厚、不透明，甚至内有纤维素性渗出物，与心肌相粘连</li>
+<li><strong>纤维素性肝周炎</strong> ：表现为肝脏不同程度肿大，表面有不同程度的纤维素性渗出物，严重时整个肝脏被一层纤维素性膜包裹</li>
+<li><strong>纤维素性腹膜炎</strong> ：表现为腹腔有数量不等的腹水，混有纤维素性渗出物，或纤维素性渗出物分布于腹腔肠道和脏器间</li>
+</ol>
+</li>
+<li><p>脐带炎（经脐带侵入）</p>
+<ol>
+<li>排白色泥土状下痢，腹部膨胀，多在出壳后2-3天死亡，5-6日减少</li>
+<li>卵黄吸收不良</li>
+</ol>
+</li>
+<li><p>眼炎</p>
+<ol>
+<li>常见到鸡的一侧眼失明，开始时眼睑肿胀、流泪、怕光，逐渐瞳孔混浊导致失明、萎缩</li>
+<li>眼房液混浊，眼结膜充血、出血</li>
+</ol>
+</li>
+<li><p>关节炎及滑膜炎</p>
+<ol>
+<li>跗关节周围呈竹节状肿胀，跛行</li>
+<li>关节液混浊、腔内有时出现脓汁或干酪物</li>
+</ol>
+</li>
+<li><p>卵黄性腹膜炎</p>
+<p>产蛋鸡：</p>
+<ol>
+<li>腹腔内有卵黄、呈干酪样</li>
+<li>腹腔液增多、混浊</li>
+</ol>
+</li>
+<li><p>气囊炎</p>
+<ol>
+<li>气囊混浊，表面有纤维素性渗出物，呈灰白色</li>
+<li>继发心包炎，肝周炎，表面有纤维素性伪膜</li>
+</ol>
+</li>
+<li><p>大肠杆菌性肉芽肿</p>
+<p>小肠、盲肠、肠系膜及肝脏、心脏等部位出现结节状灰白色乃至黄白色的肉芽肿，有的学者认为多系粘液性大肠杆菌所引起。死亡率可达50%以上</p>
+</li>
+<li><p>输卵管炎型</p>
+<p>产蛋鸡常发生慢性输卵管炎。其特征是输卵管高度扩张，内积干酪样渗出物，表面不光滑**，**切面呈轮层状，输卵管黏膜充血、增厚</p>
+</li>
+</ol>
+<h3 class="atx" id="2、沙门菌">2、沙门菌</h3>
+<h4 class="atx" id="仔猪副伤寒流行病学特点？">仔猪副伤寒流行病学特点？</h4>
+<ul>
+<li><strong>年龄：</strong> 常发于6个月以下的仔猪，以1—4月龄多发。</li>
+<li><strong>季节：</strong> 猪多在多雨潮湿季节多发。</li>
+</ul>
+<h3 class="atx" id="3、巴氏杆菌">3、巴氏杆菌</h3>
+<h4 class="atx" id="禽霍乱，临床诊断（流行病学、临床症状、病理变化），实验室诊断程序">禽霍乱，临床诊断（流行病学、临床症状、病理变化），实验室诊断程序</h4>
+<p>  巴 氏 杆 菌 病 
+禽霍乱 
+一、临床诊断
+（一）流行病学
+1.易感动物：多种动物和人均易感 
+2.传染源：畜群中发生巴氏杆菌病时，往往查不出传染源。一般认为家畜在发病前已经带菌。 
+3.传播途径：
+消化道：病畜排泄场、分泌物污染饲料、饮水、用具、外界环境。
+呼吸道：咳嗽、喷嚏→飞沫。
+皮肤：吸血昆虫，黏膜伤口。
+4.流行特点：无季节性，一般为散发性，不同畜、禽间不易互相感染 
+（二）临床症状 
+急性型：最为常见
+①体温升高43～44℃。
+②腹泻，拉黄色稀粪。
+③呼吸困难，口鼻分泌物增加。
+④鸡冠和肉髯变青紫色，有的病鸡肉髯肿胀，有热痛感。
+⑤产蛋鸡停止产蛋。
+病程短的约半天，长的1—3天。病死率很高。</p>
+<p>（三）病理变化
+急性：病变较为特征：
+①病鸡的腹膜、皮下组织及腹部脂肪常见小出血点。
+②心包积液，心冠脂肪出血。
+③肺充血、出血。
+④肝脏上有灰白色的坏死灶。
+⑤脾肿大。
+⑥肌胃出血，肠道出血，肠内容物含有血液。 
+ 二、实验室诊断
+1.细菌学诊断
+诊断程序：
+（1）人工感染 
+（2）观察临诊症状
+（3）剖检病鸡，观察病理变化
+（4）采集病料，涂片，染色镜检
+（5）病料接种血平板，37℃培养24h，观察菌落形态，涂片，进行革兰氏染色镜检
+（6）挑纯培养，生化鉴定
+（7）动物致病性试验-感染小鼠
+（8）观察，剖检，染色镜检，总结分析
+2.分子生物学诊断
+核酸检测，免疫组化，荧光测定</p>
+<h3 class="atx" id="4、炭疽">4、炭疽</h3>
+<h4 class="atx" id="为什么尸体不能剖检">为什么尸体不能剖检</h4>
+<ol>
+<li>在未剖开的尸体中不易形成芽孢，剖开易接触充足氧气和适宜温度形成芽孢</li>
+<li>菌体对外界理化因素抵抗力不强，芽孢有强抵抗力耐受热、干燥、紫外线、γ射线和多种消毒剂</li>
+<li>人对炭疽普遍易感。解剖接触易患病</li>
+<li>有菌血症特点，可通过尿、粪、天然孔出血大量排菌。剖尸后处理不当会使周围环境形成长久疫源地</li>
+</ol>
+<h3 class="atx" id="5、破伤风">5、破伤风</h3>
+<p>破伤风又名强直症，俗称锁口风**，**是由<u>破伤风梭菌</u>经伤口厌氧感染引起的一种急性、创伤性、中毒性人兽共患病，临诊上以<u>骨骼肌持续性痉挛</u>和<u>对外界刺激反射兴奋性增高</u>为特征。</p>
+<blockquote>
+<p>**破伤风梭菌：**又称强直梭菌，是一种厌氧的革兰阳性杆菌</p>
+</blockquote>
+<h3 class="atx" id="6、布鲁菌病">6、布鲁菌病</h3>
+<h4 class="atx" id="病原分类及其危害">病原分类及其危害</h4>
+<table>
+<thead>
+<tr>
+<th align="left">菌种</th>
+<th align="left">主要宿主</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">流产布鲁菌</td>
+<td align="left">牛</td>
+</tr>
+<tr>
+<td align="left">马耳他布鲁菌</td>
+<td align="left">山羊和绵羊</td>
+</tr>
+<tr>
+<td align="left">猪布鲁菌</td>
+<td align="left">猪</td>
+</tr>
+<tr>
+<td align="left">狗布鲁菌</td>
+<td align="left">狗</td>
+</tr>
+</tbody></table>
+<p><strong>危害：</strong> 生殖器官和胎膜发炎，引起流产，不育和各种组织的局部病灶</p>
+<h4 class="atx" id="牛布鲁菌病">牛布鲁菌病</h4>
+<h5 class="atx" id="临床症状：">临床症状：</h5>
+<ol>
+<li><p>流产：最显著的症状，可发生于妊娠的任何时期，最常发生在第6—8个月，已经流产的母牛如果再流产，一般比第一次流产时间要迟。</p>
+</li>
+<li><p>分娩预兆：产道流出脓性，黏性分泌物。</p>
+</li>
+<li><p>生殖道炎症：产道黏膜出现粟粒大红色结节，由产道流出灰白色或灰色黏性分泌物。</p>
+</li>
+<li><p>胎水多清朗。</p>
+</li>
+<li><p>常胎衣滞留。</p>
+</li>
+<li><p>早期流产的胎儿多已死亡。发育比较完全的胎儿，产出时可能存活，但衰弱，不久死亡。</p>
+</li>
+<li><p>公牛常见睾丸炎及附睾炎。</p>
+</li>
+<li><p>还常见关节炎。</p>
+</li>
+</ol>
+<h5 class="atx" id="病理变化：">病理变化：</h5>
+<ol>
+<li><p>胎衣呈黄色胶冻样浸润，有些部位覆有纤维蛋白絮片和脓液，有些部位增厚有出血；</p>
+</li>
+<li><p>胎儿四胃中有淡黄色或白色黏液絮状物；</p>
+</li>
+<li><p>皮下出血性浆液性浸润；</p>
+</li>
+<li><p>淋巴结、肝、脾肿胀，有炎性坏死灶；</p>
+</li>
+<li><p>公牛睾丸和附睾炎性坏死、化脓。</p>
+</li>
+</ol>
+<h5 class="atx" id="防制措施：">防制措施：</h5>
+<p>以预防为主原则，结合检疫、免疫和淘汰患病动物等措施</p>
+<ol>
+<li><p>在未感染畜群中，控制本病的传入的最好方法是自繁自养，引种检疫。</p>
+</li>
+<li><p>检疫淘汰患病动物。通过免疫生物学方法在畜群中进行反复检查，淘汰(屠宰)患病动物，以清净畜群。</p>
+</li>
+<li><p>培育健康动物群。由犊牛培育健康动物群，可与培养无结核病牛群结合进行。</p>
+</li>
+<li><p>做好消毒工作，以切断传播途径。</p>
+</li>
+<li><p>疫苗接种，细胞免疫，T细胞+抗原→淋巴因子+提高巨噬细胞活性+消除病原菌</p>
+<ol>
+<li><p>猪型2号苗，羊、猪、牛均可用，毒力稳定，使用安全，免疫力好。</p>
+</li>
+<li><p>羊型5号苗，可用于绵羊、山羊、牛和鹿的免疫。</p>
+<p>我国现行的布病免疫政策为“在疫病流行区和受威胁区，对易感家畜进行免疫，在春季或秋季进行一次免疫，<strong>奶牛和种公牛不得进行布病疫苗免疫接种</strong>”，而这在实践中并无约束力，并且一些 牛场私下进行的疫苗接种干扰了正常监测和检疫的进行。</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 class="atx" id="7、结核病">7、结核病</h3>
+<h4 class="atx" id="牛结核诊断方法、防制措施">牛结核诊断方法、防制措施</h4>
+<p>牛结核-诊断及防制
+一、诊断
+（一）临床诊断   ：根据临床症状及病理变化作出初步诊断。
+临床症状 </p>
+<ol>
+<li><p>肺结核（牛）
+（1）病初食欲、反刍无明显异常，体温也正常，或只有微热
+（2）以后发现容易疲劳，常伴有短而干的咳嗽，随后咳嗽加重；
+（3）逐渐消瘦，毛焦腰掉；
+（4）肺部听诊时有摩擦音或湿啰音。
+（5）体表淋巴结肿大；
+（6）多数牛患结核后往往发生乳房感染，乳房淋巴结肿大，腹股沟淋巴结肿大。</p>
+</li>
+<li><p>肠道结核
+ 多见于犊牛，表现消化不良，食欲不振，顽固性下痢，迅速消瘦。</p>
+</li>
+<li><p>生殖器官结核
+ 在母畜往往可见于子宫肿大，结核性坏死。临床上表现为母畜不孕，孕畜流产。
+ 病理变化 </p>
+</li>
+<li><p>眼观病变
+（1）肺脏有很多大小不一凸起的灰白色或黄白色结核结节，有的出现融合性的大结核病灶，切开看不到正常的肺组织，有的已经钙化，切时有切砂粒一样的感觉。
+（2）胸腔浆膜上出现半透明或不透明灰白色硬的结核结节，有的单个存在，有的成堆，象珍珠一样挂在胸壁上，称为珍珠病。
+（3）严重时胸膜和肺粘连。
+（4）肺门淋巴结肿大，变硬，切开成干酪样坏死。
+（5）心耳上有结核结节。
+（6）肝表面有结核结节，肝脏与腹膜粘连。
+（7）脾表面有结核结节。
+（8）肠系膜淋巴结肿大、变硬，切开成干酪样坏死。
+（9）一侧子宫肿大，变形，切开成干酪样。</p>
+</li>
+<li><p>病理组织学变化</p>
+<pre><code class="indented-code-block">显微镜下，结核结节的组织结构表现为：中心是坏死细胞和结缔组织染成红色，外围由类上皮细胞和多核巨噬细胞所环绕，再外围由一层增生的上皮细胞和淋巴细胞所包围，最外层是密集的淋巴细胞。</code></pre>
+<p>   （二）X光透视诊断</p>
+<pre><code class="indented-code-block">常常可见肺野中出现大片云絮阴影，其中散布中等密度、结节状、边缘清晰的阴影，有时可见在浓密的云絮状阴影中出现大小不等的空洞。长期慢性病例，在肺野中出现粗乱的，条索状或网状阴影。密度较高，边缘清晰。有时可见大小不等的致密的钙化灶 。</code></pre>
+<p>   （三）变态反应诊断——结核菌素试验 </p>
+</li>
+</ol>
+<p>1.点眼法：
+阳性反应：2个大米粒大或2×10mm以上的黄白色脓性分泌物自眼角流出或分散在眼周围或上述反应较轻，但有明显的结膜充血，流泪，眼睑水肿和明显的全身反应者。
+2.皮内注射试验 
+阳性反应：发热，疼感或弥漫性水肿，肿胀面积在35×45mm以上或上述反应轻微，皮差4mm以上者。
+3.综合判定：两者中任何一种阳性则判定为结核菌素阳性牛——结核病患者或带菌者。</p>
+<p>（四）细菌学诊断
+ 1.病料采集：生前采集鼻腔分泌物，粪便，乳汁；死后采集脏器病变组织。
+ 2.直接抹片检查：抗酸染色，镜下检查：组织细胞和其它杂菌染成蓝色，而结核菌为红色。
+ 3. 分枝杆菌分离培养
+ 4.  动物感染试验：确定分离物是否有致病性，分型。 
+（五）分子生物学诊断
+    PCR、核酸探针、基因芯片、DNA序列测定等方法均可做特异性诊断。
+ 二、防  制
+    动物结核病一般不予治疗，而是采取以“监测、检疫、扑杀和消毒”相结合的综合性防制措施。具体包括：
+1.检疫，防止结核病传入：采用变态反应法检出阳性群、可疑群、假定健康群。要加强人员管理，结核病人不能饲养动物。
+2.扑杀阳性牛（尤其是开放性病牛），净化污染牛群。隔离可疑牛，复检为阴性的可疑牛方可合群。
+3.培育健康牛群，逐步达到净化。
+4、切断传播途径：加强兽医卫生措施，切实做好消毒工作
+5、实施注册登记制度。对辖区内的奶牛严格管理，在开展奶牛结核病检疫、监测的同时，建立、健全动物标识追溯体系，以保证奶牛结核病防制的顺利进行。
+6、制定有效的防控和净化计划。 </p>
+<h3 class="atx" id="8、禽流感">8、禽流感</h3>
+<blockquote>
+<p>禽流感病毒(AIV)属于正黏病毒科，A型流感病毒属。流感病毒具有多形性，有囊膜，病毒的核酸为RNA。</p>
+</blockquote>
+<h4 class="atx" id="近年流行的禽流感血清型：h7n9">近年流行的禽流感血清型：H7N9</h4>
+<h4 class="atx" id="抗原性变异的类型（考过简答题，应该小题）">抗原性变异的类型（考过简答题，应该小题）</h4>
+<ol>
+<li><strong>抗原漂移(Antigenic Driff)：</strong> 由于基因组自发的点突变引起小幅度的变异，当氨基酸的改变积累到一定程度或突变氨基酸正好使抗原决定簇改变，则引起抗原性的变异，这种变异称为抗原漂移，流感病毒HA基因的变异率很高，病毒每复制一代，HA基因上就约有一个碱基发生变异，神经氨酸酶也常发生抗原漂移。</li>
+<li><strong>抗原转变(Antigenic shift)：</strong> 由于突变幅度较大导致产生新的亚型，这种变异称为抗原转变。变异涉及抗原的数量和幅度大小，
+直接影响流行的规模。</li>
+</ol>
+<h4 class="atx" id="高致病性禽流感：临床症状、病理变化、防制措施">高致病性禽流感：临床症状、病理变化、防制措施</h4>
+<h5 class="atx" id="临床症状">临床症状</h5>
+<ol>
+<li>体温迅速升高(达41.5°C以上)，精神沉郁</li>
+<li>冠与肉髯发红或呈青紫色</li>
+<li>头、颈部常出现水肿</li>
+<li>腿部皮下水肿、出血</li>
+<li>产蛋期感染禽均表现产蛋下降(15%~75%)</li>
+<li>发病率和死亡率都很高(50%~89%)，有的鸡群可达100%</li>
+</ol>
+<h5 class="atx" id="病理变化">病理变化</h5>
+<blockquote>
+<p>由于病毒的致病力不同所产生的病理变化也存在差异。多数病例在内脏器官和皮肤有各种水肿、出血和坏死。</p>
+</blockquote>
+<ol>
+<li>水肿主要表现为头部、面部、颈部、脚部水肿，并伴有点 状或者斑状出血</li>
+<li>心外膜、胸肌、腺胃和肌胃的黏膜出血最为明显</li>
+<li>胰腺、脾脏和心脏常见有坏死灶。</li>
+</ol>
+<h5 class="atx" id="防制措施">防制措施</h5>
+<ol>
+<li><p>生物安全措施</p>
+<ol>
+<li>引种安全：不从疫区引种，引种隔离</li>
+<li>切断传染源：携带病毒的禽、污染的水和饲料</li>
+<li>切断传播途径：野鸟（隔离）、养殖场的车辆（消毒）、养殖人员（隔离）</li>
+<li>加强饲养管理：整栋舍同进同出</li>
+</ol>
+</li>
+<li><p>疫苗免疫</p>
+<ol>
+<li><p>根据病毒流行情况，合理选择疫苗</p>
+</li>
+<li><p>定期检测免疫效果，及时加强免疫</p>
+</li>
+</ol>
+</li>
+<li><p>防止疫情扩散</p>
+<ol>
+<li>发现疫情，向兽医行政管理部门报告</li>
+<li>隔离封锁、扑杀毁灭、环境消毒</li>
+</ol>
+</li>
+</ol>
+<h3 class="atx" id="9、口蹄疫">9、口蹄疫</h3>
+<p>口蹄疫是由<u>口蹄疫病毒</u>引起的急性热性高度接触性传染病，主要侵害偶蹄兽，偶见于人和其它动物。临诊上以<u>口腔黏膜、蹄部及乳房皮肤发生水疱和烂斑</u>为特征。</p>
+<h3 class="atx" id="10、狂犬病">10、狂犬病</h3>
+<p>狂犬病是由<u>狂犬病病毒</u>引起的一种人和所有温血动物共患的急性自然疫源性传染病，病毒主要侵害神经系统，临床特征是<u>神经兴奋和意识障碍，继之发生局部或全身麻痹而死亡</u>。各种动物的临诊表现都相似，一般可分为两种类型，即狂暴型和麻痹型。动物患狂犬病后，常有害怕喝水的突出临床表现，甚至看到液体时就发生咽喉痉挛，故又称为“恐水症”。</p>
+<blockquote>
+<p>狂犬病病毒属于弹状病毒科，狂犬病病毒属，单股RNA病毒。</p>
+</blockquote>
+<h4 class="atx" id="传播途径">传播途径</h4>
+<ol>
+<li>由患病动物咬伤（唾液中含有病毒）而感染</li>
+<li>皮肤或黏膜有损伤时，接触病毒唾液引起感染</li>
+<li>人和动物都有经呼吸道、消化道感染的病例，所以这一种途径也可传播</li>
+</ol>
+<h4 class="atx" id="咬伤后处理">咬伤后处理</h4>
+<p>人若被咬伤后，应迅速用20%软肥皂水冲洗伤口，并用3%碘酊处理伤口，及早接种狂犬病疫苗，最好能同时结合注射免疫血清，可以明显降低发病率</p>
+<h3 class="atx" id="11、流行性乙型脑炎">11、流行性乙型脑炎</h3>
+<p>由流行性乙型脑炎病毒（JEV，又称日本脑炎），引起的一种蚊媒性人兽共患传染病，多种动物均可感染。</p>
+<p>特征：怀孕母猪高热、流产、死胎和木乃伊胎；公猪睾丸炎，单侧睾丸肿大</p>
+<blockquote>
+<p>黄病毒科、黄病毒属、有囊膜、单股正链RNA</p>
+</blockquote>
+<h4 class="atx" id="传播媒介">传播媒介</h4>
+<p>三带喙库蚊是主要传播媒介，也是JEV的自然宿主</p>
+<h2 class="atx" id="猪病">猪病</h2>
+<h3 class="atx" id="1、猪瘟临床、实验室诊断">1、猪瘟临床、实验室诊断</h3>
+<h3 class="atx" id="2、猪伪狂犬（pr）">2、猪伪狂犬（PR）</h3>
+<h4 class="atx" id="临床症状-1">临床症状</h4>
+<p>潜伏期：一般为3~6天，短者36小时，长者10天</p>
+<ol>
+<li><strong>2周龄内哺乳仔猪</strong> （病死率可达100%）：<ol>
+<li>初期发热、呕吐、腹泻、呼吸困难、骚痒</li>
+<li>中后期出现，发抖、共济失调、间歇性痉挛、后躯麻痹、做前进或后退转动、倒地四肢划动等神经症状，抽搐死亡。</li>
+</ol>
+</li>
+<li><strong>3~4周龄仔猪</strong> （病死率可达40%~60%）：主要症状同新生仔猪，部分耐过猪有后遗症，如瘫痪和发育受阻</li>
+<li><strong>2月龄以上猪：</strong> 症状轻微或隐性感染，多在3~4天恢复。如出现体温继续升高，病猪则出现震颤、共济失调、倒地后四肢痉挛等神经症状</li>
+<li><strong>妊娠母猪：</strong> 咳嗽等呼吸道症状，发生流产、产木乃伊胎、死胎。母猪屡配不孕，返情率高达90%</li>
+<li><strong>公猪：</strong> 睾丸肿胀、萎缩、丧失种用能力</li>
+</ol>
+<h4 class="atx" id="病理变化-1">病理变化</h4>
+<ol>
+<li>脑膜充血、出血和水肿，脑脊髓液增多；脑组织病变包括有血管套、胶质细胞坏死、嗜酸性包涵体等</li>
+<li>肾脏有针尖状出血点</li>
+<li>肺水肿，有小叶性间质肺炎</li>
+<li>扁桃体、肝和脾有散在白色坏死点</li>
+<li>流产母猪，子宫内膜炎，流产或分娩时可见坏疽性胎盘</li>
+</ol>
+<h3 class="atx" id="3、猪丹毒">3、猪丹毒</h3>
+<h4 class="atx" id="初步诊断">初步诊断</h4>
+<p>根据流行病学、临床症状和病理变化特征</p>
+<h5 class="atx" id="流行病学：">流行病学：</h5>
+<ol>
+<li>易感动物： 主要感染猪</li>
+<li>传染源：病猪和带毒猪是本病的主要传染源</li>
+<li>传播途径：通过接触口鼻分泌和粪便排泄物，经消化道传播；</li>
+</ol>
+<h5 class="atx" id="临床表现：急性败血型、亚急性疹块型、慢性型">临床表现：急性败血型、亚急性疹块型、慢性型</h5>
+<ol>
+<li><p>急性败血型</p>
+<ol>
+<li>流行初期，一头或数头猪无任何症状，突然死亡</li>
+<li>随后发病的猪高热稽留42-43℃，有时呕吐、卧地不起，食欲废绝</li>
+<li>粪便干硬，附有粘液，后期下痢</li>
+<li>呼吸增快，黏膜发绀</li>
+<li>结膜充血，眼睛清亮有神</li>
+<li>部分猪皮肤发生潮红，出现各种红斑，继而发紫，手压褪色，松开又恢复。以耳、颈、胸、腹侧部多见</li>
+</ol>
+</li>
+<li><p>亚急性疹块型</p>
+<ol>
+<li>体温升高达41℃以上；病初食欲降低，口渴、便秘，有时恶心呕吐</li>
+<li>发病1-3d，胸、腹、背、肩、四肢等部位皮肤发生疹块，呈方块型、菱形、有时呈圆形，稍突起于皮肤表面；其特征是皮肤表面出现疹块，俗称“打火印”；初期疹块充血，指压褪色；后期瘀血，紫蓝色，压之不褪</li>
+<li>疹块发生后，体温开始下降，数日康复，病势重的皮肤坏死，变成草样痂皮。部分猪转变为败血症而死，病程1-2周</li>
+</ol>
+</li>
+<li><p>慢性型</p>
+<p>一般由上两型转变而来，也有原发，常见有三型</p>
+<ol>
+<li>关节炎型：四肢关节肿胀、疼痛</li>
+<li>心内膜炎型：心脏杂音，心跳加速</li>
+<li>皮肤坏死型：局部皮肤肿胀，隆起、坏死，色黑、干硬，似皮革，逐渐与下层新生组织分离。约经二、三个月坏死，皮肤脱落，病愈</li>
+</ol>
+</li>
+</ol>
+<h5 class="atx" id="病理变化-2">病理变化</h5>
+<ol>
+<li><p>急性型：病猪呈全身败血症变化，以肾、脾肿大及体表皮肤出现红斑为特征。</p>
+<ol>
+<li>鼻、耳、胸、腹部等处皮肤呈不同程度的紫色</li>
+<li>肺、肝脏充血、肺水肿</li>
+<li>全身淋巴结发红肿大，切面多汁</li>
+<li>肾淤血肿大，由于急性出血性肾小球肾炎使其外观呈弥漫性暗红色，称“大红肾”</li>
+<li>胃、十二指肠、回肠或整个肠道都有不同程度的卡他性或出血性炎症</li>
+<li>脾脏充血、肿大，呈樱红色，组织切片观察可见“白髓周围红晕”的现象</li>
+</ol>
+</li>
+<li><p>亚急性型：以皮肤（颈、背、腹侧部）疹块为特征</p>
+</li>
+<li><p>慢性型：</p>
+<ol>
+<li><p>慢性关节炎型：是一种多发性增生性关节炎，关节肿胀，有多量浆液性纤维素性渗出液，粘稠或带红色，后期 <strong>滑膜绒毛增生肥厚，呈花边样病变。</strong></p>
+</li>
+<li><p>慢性心内膜炎：常见一个或数个瓣膜，多见于 <strong>二尖瓣膜上有溃疡性或菜花样赘生物</strong> 。它是由肉芽组织和纤维素性凝块组成的。</p>
+</li>
+</ol>
+</li>
+</ol>
+<h4 class="atx" id="临诊指标：">临诊指标：</h4>
+<ol>
+<li>病猪皮肤出现红色或紫色疹块，指压变色</li>
+<li>脾肿大呈樱红色，“白髓周围红晕”</li>
+<li>肾淤血肿大，呈“大红肾”</li>
+<li>关节炎，呈“花边样”病变</li>
+</ol>
+<h4 class="atx" id="实验室诊断：">实验室诊断：</h4>
+<ol>
+<li>病原学诊断：急性败血症，采集耳静脉血；亚急性性，采集疹块边缘皮肤血，涂片镜检，或接种培养基病原分离、纯化、接种小鼠和鸽子后，可分离出大量的丹毒丝菌</li>
+<li>PCR诊断：针对16sRNA，进片段扩增与测序分析</li>
+<li>血清学诊断：平板和试管凝集，琼脂扩散等检测血清中的抗体。</li>
+</ol>
+<h3 class="atx" id="4、猪支原体肺炎">4、猪支原体肺炎</h3>
+<p>又称为猪地方流行性肺炎，俗称猪气喘病或喘气病，由猪肺炎支原体（Mycopasma hyopneumoniae, Mhp**）**引起的猪的一种慢性呼吸道传染病。</p>
+<p>特征：以咳嗽和气喘为主要临床症状；病理变化特征是肺的尖叶、心叶、中间叶和隔叶前缘呈肉样或虾肉样实变。</p>
+<p>支原体科、 支原体属 、无细胞壁，呈多形态，低倍镜显微镜下菌落呈煎荷包蛋状，革兰染色阴性</p>
+<h4 class="atx" id="临床症状：咳嗽、气喘等呼吸道症状为主；x线检查可发现肺炎病灶；分为急性、慢性和隐性三个类型。">临床症状：咳嗽、气喘等呼吸道症状为主；X线检查可发现肺炎病灶；分为急性、慢性和隐性三个类型。</h4>
+<ol>
+<li><p>急性型</p>
+<ol>
+<li>主要见于新疫区和新感染的猪群</li>
+<li>精神不振，头下垂，站立一隅，呼吸次数增加</li>
+<li>呼吸困难，张口喘气、腹式呼吸</li>
+<li>体温一般正常，继发感染除外</li>
+<li>病程1~2周，病死率高 。</li>
+</ol>
+</li>
+<li><p>慢性型</p>
+<ol>
+<li>主要见于老疫区</li>
+<li>咳嗽，清晨、采食或剧烈运动时最明显</li>
+<li>食欲变化不大，严重时食欲减少或不食</li>
+<li>病程2~3个月，导致病猪消瘦、衰弱，生长发育不良</li>
+</ol>
+</li>
+<li><p>隐性型</p>
+<ol>
+<li>主要见于老疫区</li>
+<li>饲养管理条件好，不显症状，用X线检查或剖检时可见肺部的病变</li>
+<li>饲养管理差，病情出现恶化，出现急性或慢性临床症状</li>
+</ol>
+</li>
+</ol>
+<h4 class="atx" id="病理变化-3">病理变化</h4>
+<ol>
+<li>肺 ：支气管肺炎<ol>
+<li>早期：发生在心叶，病灶（肉色或暗红色，和无病灶的组织界限清晰）如绿豆大</li>
+<li>中期：病灶逐渐扩大，融合成多叶病理变化，病变部位的颜色多为淡红色或灰红色，如鲜嫩肌肉，与无病灶的组织界限明显，俗称“肉变”</li>
+<li>后期：病变部位颜色转为灰白色或浅红色，俗称“胰变”或“虾肉样变”</li>
+</ol>
+</li>
+<li>肺病理组织：巨噬细胞浸润、淋巴样细胞增生</li>
+<li>肺继发感染：引起肺和胸膜的纤维素性、化脓性和坏死性病变</li>
+<li>支气管：上皮细胞纤毛脱落、数量减少</li>
+<li>免疫系统：肺泡巨噬细胞、外周血单个细胞、鼻腔内的树突状细胞、T细胞、B细胞减少，引起免疫抑制。</li>
+</ol>
+<h3 class="atx" id="5、副猪嗜血杆菌病hps">5、副猪嗜血杆菌病HPS</h3>
+<p>巴氏杆菌科、嗜血杆菌属、革兰氏阴性、血清型：可至少分为15种血清型</p>
+<h4 class="atx" id="临床症状-2">临床症状</h4>
+<ol>
+<li><p>仔猪：可视粘膜发绀、侧卧、消瘦和被毛凌乱</p>
+</li>
+<li><p>母猪及公猪：</p>
+<p> 急性感染后可能留下后遗症，即母猪流产、公猪慢性跛行。即使应用抗生素治疗感染母猪，分娩时也可能引发严重疾病。</p>
+<p>哺乳母猪的慢性感染，跛行可能引起母性行为极端弱化。</p>
+</li>
+</ol>
+<h4 class="atx" id="防控">防控</h4>
+<ol>
+<li>免疫：血清型4和5的副猪嗜血杆菌商业化疫苗对血清型12，13或14的菌株具有保护，对血清2型不具有保护作用；自家苗，制备血清型一致的灭活疫苗</li>
+<li>饲养管理：减少仔猪的流动，提倡自繁自养，加强猪的营养，减少断奶应激</li>
+<li>药物防控：采用替米考星和氟苯尼考拌料或引起给药，阿莫西林等肌肉注射；药敏试验确定最适合药物</li>
+</ol>
+<h3 class="atx" id="6、猪繁殖与呼吸综合征（prrs）（蓝耳病）">6、猪繁殖与呼吸综合征（PRRS）（蓝耳病）</h3>
+<h4 class="atx" id="临床症状：-1">临床症状：</h4>
+<p>潜伏期：人工感染为2~7天，自然感染为14天</p>
+<p>临床表现：因毒株（高致病性、低致病性和继发感染）、猪的种类而各异</p>
+<p>新生仔猪：呼吸困难、打喷嚏、嗜睡、肌肉震颤、后 </p>
+<p> 肢麻痹、共济失调，有的仔猪耳部发红</p>
+<p>  和躯体末端皮肤发绀，死亡率高达80%。</p>
+<p> 断奶仔猪：呼吸困难、下痢、生长发育不良，极易发生混合感染，部分猪出现耳朵发绀，死亡率10%-30%不等。</p>
+<p> 育肥猪：双眼眼睑肿胀，发生结膜炎和腹泻，并出现肺炎，呼吸加快、咳嗽加剧。公猪感染后精液质量下降、数量减少。</p>
+<p> 妊娠母猪：母猪妊娠后期发生流产、产死胎、木乃伊胎、弱仔。少数猪耳部发紫，有的母猪出现肢体麻痹性神经症状。</p>
+<p>病理变化</p>
+<p>弥漫性间质性肺炎，胸、腹腔内有积液</p>
+<p>淋巴结肿大、水肿</p>
+<p>死胎肠系膜水肿，胸腔、腹腔积水；脐带一段或全部出血为标志性病变。</p>
+<p>防控</p>
+<p>自养自繁，建立稳定的种猪群，不轻易引种；</p>
+<p>引进猪时，要进行检测、隔离、检疫；</p>
+<p>全进全出，至少做到不同生产阶段的全进全出；</p>
+<p>减少饲养密度，通风，夏季降温，冬季保温；</p>
+<p>加强环境消毒、带猪消毒；</p>
+<p>做好疫苗免疫</p>
+<p>后备猪感染驯化</p>
+<p>免疫接种：灭活疫苗和弱毒疫苗</p>
+<p> 商品猪：断奶前后初免，一个月后加强免疫1次；</p>
+<p> 种母猪：70日龄前免疫程序同商品猪，以后每次配种前加强免疫1次；</p>
+<p> 种公猪和妊娠母猪：不能接种弱毒疫苗</p>
+<h3 class="atx" id="7、传染性胃肠炎，流行性腹泻">7、传染性胃肠炎，流行性腹泻</h3>
+<h3 class="atx" id="8、猪圆环">8、猪圆环</h3>
+<h3 class="atx" id="9、非洲猪瘟">9、非洲猪瘟</h3>
+<h2 class="atx" id="反刍动物、马">反刍动物、马</h2>
+<h3 class="atx" id="1、牛病毒性腹泻粘膜病">1、牛病毒性腹泻/粘膜病</h3>
+<p>由牛病毒性腹泻病毒（Bovineviral diarrhea virus, BVDV）1型和2型引起的一种急性和热性传染病。</p>
+<p>特征：以腹泻和整个消化道黏膜坏死、糜烂或溃疡为特征。</p>
+<h3 class="atx" id="2、牛白血病">2、牛白血病</h3>
+<p>由牛白血病病毒（Bovine leukemia virus, BLV）引起的牛、绵羊等动物的一种慢性肿瘤性疾病。</p>
+<p>特征：淋巴样细胞恶性增生、进行性恶病质和高病死率</p>
+<h3 class="atx" id="3、小反刍兽疫">3、小反刍兽疫</h3>
+<p>小反刍兽疫病毒：副黏病毒科（Paramyxoviridae） 麻疹病毒属</p>
+<p>发病急剧、高热稽留、眼鼻分泌物增加（流浆液性鼻液）、腹泻和肺炎、口腔糜烂、肠道糜烂，在结肠和直肠处出现特征性的线状出血或斑马样条纹；</p>
+<h3 class="atx" id="4、羊梭菌">4、羊梭菌</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="left">病原</th>
+<th>可用疫苗</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>羊快疫</td>
+<td align="left">腐败梭菌</td>
+<td></td>
+</tr>
+<tr>
+<td>羊猝疽</td>
+<td align="left">C型产气荚膜梭菌</td>
+<td>羊三联四防</td>
+</tr>
+<tr>
+<td>羊肠道血症</td>
+<td align="left">D型产气荚膜梭菌</td>
+<td>羊三联四防</td>
+</tr>
+<tr>
+<td>羔羊痢疾</td>
+<td align="left">B型产气荚膜梭菌</td>
+<td>羊五联</td>
+</tr>
+<tr>
+<td>羊黑疫</td>
+<td align="left">B型诺维梭菌</td>
+<td>羊五联或7联</td>
+</tr>
+</tbody></table>
+<p>羊三联（羊快疫、羊猝疽、羊肠毒血症）；</p>
+<p>羊五联（羊快疫、羊猝疽、羊肠毒血症、羔羊痢疾、羊黑疫）；</p>
+<p>羊三联四防（预防羊快疫、羊猝疽、羊肠毒血症、羔羊痢疾）</p>
+<h2 class="atx" id="禽">禽</h2>
+<h3 class="atx" id="1、新城疫">1、新城疫</h3>
+<h3 class="atx" id="2、马立克病">2、马立克病</h3>
+<p>病原:马立克病毒(Marek’s disease virus, MDV)</p>
+<p>1.分类地位：</p>
+<p>马立克病病毒是一种细胞结合性病毒，
+属于α -疱疹病毒科，马立克病毒属。是
+双股线状DNA病毒。</p>
+<ol start="2">
+<li><p>MDV的毒株分类:MDV分为三个血清型：</p>
+<p>(1)血清1型:为致瘤，禽疱疹病毒2型</p>
+<p>(2)血清2型:为非致瘤，禽疱疹病毒3型</p>
+<p>(3)血清3型:火鸡疱疹病毒1型</p>
+</li>
+<li><p>根据症状可分为五型:</p>
+<p>1.神经型(古典型)</p>
+<p> 常侵害外周神经，而以坐骨神经和臂神经的受害最多见。当坐骨
+神经受害时，常引起一肢或两肢发生不完全麻痹，步态不稳。一个
+非常特征性的姿势是病鸡的一腿伸向前方，另一腿伸向后方，形成 “劈叉姿势”。麻痹严重时，病鸡卧地不起。臂神经受害时，翅膀
+下垂，俗称“穿大褂”。当控制颈肌的神经受到侵害时，病鸡头下
+垂或头颈歪斜。其它神经受损时，可以引起诸如嗉囊膨胀、喘息、
+腹泻、消瘦、贫血等症状。</p>
+<p>2.眼型</p>
+<p>虹膜受侵害时，一侧或两侧虹膜褪色。瞳孔成同心环</p>
+<p>状或斑点状以至弥漫性灰白色，因此又叫“灰眼”、
+“银眼”。开始时瞳孔边缘变得不整齐，后期瞳孔只剩
+针尖大的小孔，视力丧失。</p>
+<ol start="3">
+<li><p>内脏型</p>
+<p>常见于50-70日龄的鸡，缺乏特征性症状，主要表现精
+神萎顿，食欲降低，消瘦，突然死亡。往往在死后剖检
+时才发现内脏上有明显的病变。</p>
+<p>4.皮肤型</p>
+<p>此型缺乏明显的临床症状，往往在宰后拨毛时发现羽
+毛囊增大，形成淡白色小结节或瘤状物。此种病变常见于
+大腿部、颈部及躯干背面生长粗大羽毛的部位。</p>
+<p>5.混合型</p>
+<p>两型或三型症状同时存在。在发生急性马立克病时，</p>
+<p>可暴发暂时性瘫痪综合征。开始大多数鸡精神萎顿，几天</p>
+<p>后一部分鸡发生共济失调，随后出现单侧或双侧肢体瘫痪，
+最后病鸡陷于脱水、消瘦和昏迷状态。</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 class="atx" id="3、传染性法氏囊病">3、传染性法氏囊病</h3>
+<p>本病是由传染性法氏囊病病毒引起的幼鸡的一种急性、高度接触性传染病，发病率高，病程短，主要症状为腹泻、颤抖，极度虚弱。病变特征为:法氏囊肿大，出血;腺胃和肌胃交界处有出血带;胸肌、腿肌出血;肾脏有尿酸盐沉积。</p>
+<h3 class="atx" id="4、鸡支原体感染（鸡毒支原体）">4、鸡支原体感染（鸡毒支原体）</h3>
+<p>本病又称慢性呼吸道病(CRD)，其特征为咳嗽、流
+鼻汁、呼吸道罗音和张口呼吸。</p>
+<p>MG为需氧或兼性厌氧菌，可分解葡萄糖产酸，和麦芽糖、
+产酸不产气、不发酵乳糖。在液体培养基中培养5~7天，
+使培养液变黄。</p>
+<ul>
+<li><p>在固体培养基上，需置潮湿的环境中培养3~10d才能形成
+表面光泽透明、边缘整齐、露滴样的小菌落，且菌落为“</p>
+<p>煎蛋样。</p>
+</li>
+<li><p>菌落很小，最大不超过1mm</p>
+</li>
+<li><p>姬姆萨染色着色良好，革兰氏染色阴性，着</p>
+<p>色较淡。</p>
+</li>
+</ul>
+<h3 class="atx" id="5、传染性支气管炎">5、传染性支气管炎</h3>
+<ol>
+<li>分类地位</li>
+</ol>
+<p>属于冠状病毒科γ-冠状病毒属，单股(+)RNA病毒，有囊膜</p>
+<p>已报道的血清型有30多个血清型，其中包括11 个引起呼吸道症状的血清型和16个肾病变的血清型</p>
+<p>鸡传染性支气管炎的临床型已有呼吸型、肾型、
+肠型、 肌肉、腺胃型等多种</p>
+<h3 class="atx" id="6、传染性喉气管炎">6、传染性喉气管炎</h3>
+<p>传染性喉气管炎是由传染性喉气管炎病毒引起的鸡的一种急性呼吸道传染病，其特征为呼吸困难，咳嗽，咳出含有血液的渗出物，喉部和气管黏膜肿胀，出血并形成糜烂。传播快，死亡率较高。在疾病早期，患部细胞的细胞核内具有包涵体。</p>
+<h3 class="atx" id="7、产蛋下降综合征">7、产蛋下降综合征</h3>
+<p>产蛋下降综合征是由禽腺病毒III群中的病毒引起的一种以鸡产蛋下降为特征的传染病，其主要表现为鸡群产蛋骤然下降，软壳蛋和畸形蛋增加，褐色蛋蛋壳颜色变淡。</p>
+<h3 class="atx" id="8、禽白血病">8、禽白血病</h3>
+<p>病原：鸡白血病病毒，α逆转录病毒属，线性单股RNA(+)，有囊膜</p>
+<p>临床症状：</p>
+<p>患病鸡表现为食欲不振、消瘦、精神萎靡，产蛋停止，
+渐进性消瘦。</p>
+<p>• 鸡冠和肉髯苍白、皱缩，颈部、翅及背侧等处皮肤常有
+出血点，不易止血。以后出血点逐渐扩大，直至死亡。</p>
+<p>• 鸡排绿色稀粪。</p>
+<p>• 有的鸡腹部膨大，指压有波动感，有时可以触摸到肿大
+的肝脏，最后多因衰竭而死亡。</p>
+<p>防制：</p>
+<p>1.没有特效治疗药物，没有合适的疫苗免疫预防，只能
+通过加强饲养管理，切断传播途径来控制本病的发生</p>
+<p>与流行。</p>
+<p>2.综合防控措施</p>
+<p>• 防止垂直传播:祖代鸡和父母代鸡场应不含本病。商
+品蛋鸡场应做到不从感染本病的种鸡场购进鸡苗。</p>
+<p>• 防止水平传播:加强对粪便、分泌物、污染鸡
+舍笼具、用具等的消毒。</p>
+<p>• 防止医源性传播:大型养殖企业尽量使用品
+质有保证的疫苗。</p>
+<p>• 做好血清抗体监测，及时淘汰阳性鸡 。</p>
+<h3 class="atx" id="9、鸡传染性贫血">9、鸡传染性贫血</h3>
+<p>鸡传染性贫血是由鸡传染性贫血病毒 (Chicken Infectious Anemia Virus, CIAV)引起的，以雏鸡再生障碍性贫血、全身淋巴组织萎缩、皮下和肌肉出血及较高死亡率为特征的免疫抑制性传染病。</p>
+<h3 class="atx" id="10、鸭瘟">10、鸭瘟</h3>
+<p>疱疹病毒科鸭瘟病毒（鸭甲疱疹病毒1型）</p>
+<p>鸭瘟是鸭和鹅的一种急性接触性传染病。又称鸭病毒性肠炎(duck viral enteritis)，大头瘟。</p>
+<p>其特征为血管破坏、组织出血、消化道黏膜丘疹变化、淋巴器官损伤和实质器官变性。</p>
+<h4 class="atx" id="病理变化：-1">病理变化：</h4>
+<p>病禽体温升高，两腿麻痹、下痢、流泪和部分病鸭头颈肿大，食道黏膜有小出血点，并有灰黄色假膜覆盖或溃疡，泄殖腔黏膜充血、出血、水肿和假膜覆盖， 肝有不规则大小不等的出血点和坏死灶。传播迅速， 发病率和病死率都很高。</p>
+<h3 class="atx" id="11、鸭病毒性肝炎">11、鸭病毒性肝炎</h3>
+<p>鸭病毒性肝炎是小鸭的一种高度致死性的病毒性传</p>
+<p>染病，病的特征是发病急，传播快，死亡率高，临
+诊表现角弓反张，故称“背脖病”。病理变化为肝
+炎和出血。</p>
+<h2 class="atx" id="其他动物">其他动物</h2>
+<h3 class="atx" id="1、兔病毒性出血症（兔瘟）">1、兔病毒性出血症（兔瘟）</h3>
+<p>兔病毒性出血症俗称“兔瘟”，或称兔出血症，是由<u>兔出血症病毒</u>引起的兔的一种急性、高度接触性传染病。</p>
+<p>特征为<u>呼吸系统出血，肝坏死，实质脏器水肿，淤血及出血性变化</u>。</p>
+<h3 class="atx" id="2、犬瘟热">2、犬瘟热</h3>
+<p>犬瘟热是由犬瘟热病毒引起的犬和肉食目中许多动物的一种急性、热性高度接触性传染病 。</p>
+<p>本病以<u>早期表现双相热，眼、鼻、消化道等黏膜炎症，以及随后的支气管炎、卡他性肺炎、严重的胃肠炎和神经症状</u>为特征，少数病犬的鼻和足垫可发生角质化过度。</p>
+<h3 class="atx" id="3、犬细小">3、犬细小</h3>
+<p>犬细小病毒病(canine parvovirus disease)是<u>犬细小病毒(CPV)</u>引起犬的一种高度接触性传染病。对幼犬危害较大，发病率和病死率较高。本病可分为肠炎型和心肌炎型，肠炎型以<u>剧烈呕吐、小肠出血性坏死性炎和白细胞显著减少</u>为特征，心肌炎型则表现为急<u>性非化脓性心肌炎</u>。</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>猪传染性胃肠炎</th>
+<th>猪流行性腹泻</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>病原</td>
+<td>分类：冠状病毒科，<br>冠状病毒亚科 <br>α冠状病毒属；<br>有囊膜；<br>单股正链RNA</td>
+<td>猪流行性腹泻病毒<br> 甲型冠状病毒属<br></td>
+</tr>
+<tr>
+<td>临床症状</td>
+<td>潜伏期：短，一般为12<del>72 h；传播迅速，数日可蔓延群；<br>仔猪 <br>症状： <br>呕吐；粪便呈黄色、绿色或白色的水样腹泻，常含有未消化的凝乳块；极度口渴，脱水严重；体重迅速减轻；7</del>10 天内死亡；耐过猪成为僵猪。<br>断奶仔猪、育肥猪、母猪</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>有时呕吐；粪便呈灰褐色（水泥样）、呈喷射状；</td>
+<td></td>
+</tr>
+<tr>
+<td>极少死亡<br>哺乳母猪：泌乳减少或无乳</td>
+<td>潜伏期：一般为2~4 天，最短12 h；</td>
+<td></td>
+</tr>
+<tr>
+<td>病理变化</td>
+<td>主要病变在胃和小肠：</td>
+<td></td>
+</tr>
+<tr>
+<td>胃膨胀，有凝乳块，胃底黏膜充血、出血。</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>肠内充满黄绿色或灰白色液体，使肠管扩张，肠壁菲薄而呈半透明状，缺乏弹性。</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>肠系膜充血，淋巴结肿胀。</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>诊断</td>
+<td>初步初步诊断：</td>
+<td></td>
+</tr>
+<tr>
+<td>根据流行病学特点、临床症状及病理变化作出初诊<br>实验室诊断：</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><br>病毒分离：采集病死猪的肛拭子、粪便肠内容物等，双抗处理，接种Vero细胞（含胰蛋白酶），盲传。<br>病毒鉴定：电镜观察病毒粒子形状；免疫荧光确定病毒；<br>核酸检测；<br>蛋白检测：免疫组化或者荧光检测。</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</article>
+</body>
+</html>
